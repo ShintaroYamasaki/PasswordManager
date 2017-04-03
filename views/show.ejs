@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8" />
+	<title>MMUID Password Manager</title>
+	<style>
+		div  {
+			margin : 30px ;
+		} 
+	</style>
+</head>
+
+<header align="center">
+	<h1>Password Manager</h1>
+</header>
+
+<body>
+
+	<div align="center">
+		<table border='1px'>
+			<tbody>
+				<tr><td>Discription</td><td>Name</td><td>Password</td></tr>
+			<% data.forEach(function (d, key){ %>
+				<tr>
+					<td><%= d[0] %></td><td><%= d[1] %></td><td><%= d[2] %></td>
+				</tr>
+			<% }) %>
+			</tbody>
+		</table>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8" />
+	<title>MMUID Password Manager</title>
+	<style>
+		div  {
+			margin : 30px ;
+		} 
+	</style>
+</head>
+
+<header align="center">
+	<h1>Password Manager</h1>
+</header>
+
+<body>
+
+	<div align="center">
+		<form action='/show' method='post'>
+			<label for="keyword">Keyword:  </label>
+			<input type="text" id="keyword" name="keyword" size="30" />
+			<p><input type="submit" value="ok"></p>
+		</form>
+		<p>
+			<button id="register" type=button onclick="alert('オンクリックイベントが使えるよ')">register</button>
+		</p>
+	</div>
+
+</body>
+</html>
