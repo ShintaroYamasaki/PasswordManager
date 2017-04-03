@@ -11,8 +11,8 @@ router.post('/', function(req, res, next) {
 	console.log(keyword);
 
 	// Password matching
-	//if (keyword == process.env.PASSWORD_KEYWORD_MATCH) {
-	if (keyword == 'test') {
+	if (keyword == process.env.PASSWORD_KEYWORD_MATCH) {
+	//if (keyword == 'test') {
 		var filename = __dirname + '/../public/password.csv';
 
 		const fs = require('fs');
